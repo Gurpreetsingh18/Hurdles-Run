@@ -15,13 +15,15 @@ function setup(){
   database = firebase.database();
   game = new Game();
   game.getState();
-  game.start();
-
- 
-    
+  game.start();   
   
 }
 
 
 function draw(){
+  player1.display();
+  player2.display();
+  player3.display();
+  player4.display();
+
 }
