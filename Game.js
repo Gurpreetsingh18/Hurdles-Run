@@ -15,17 +15,22 @@ class Game {
     });
   }
 
- async start(){
+   async start(){
     if(gameState === 0){
       player = new Player();
-      player.getCount();
-      form = new Form();
+      form = new Form()
       form.display();
     }
-    player1 = createSprite(120,200,80,80);
-    player2 = createSprite(220,200,80,80);
-    player3 = createSprite(320,200,80,80);
-    player4 = createSprite(420,200,80,80);
-   
+
+    player1 = createSprite(100,200,20,20);
+     stroke("red");
+      strokeWeight(3);
+      fill("blue");
+    player2 = createSprite(300,200,20,20);
+     stroke("red");
+    strokeWeight(3);
+    fill("blue");
+    ellipse(player.x,player.y,60,60)
+    player = [player1,player2];
   }
 }

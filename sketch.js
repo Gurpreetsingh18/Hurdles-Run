@@ -7,7 +7,8 @@ var database;
 var player;
 
 var form, game;
-var player1,player2,player3,player4;
+var player1,player2;
+var player =  [];
 
 
 function setup(){
@@ -21,9 +22,8 @@ function setup(){
 
 
 function draw(){
-  player1.display();
-  player2.display();
-  player3.display();
-  player4.display();
+  drawSprites();
+
+  
 
 }

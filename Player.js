@@ -33,6 +33,7 @@ class Player {
       allPlayers = data.val();
     })
   }
+
 }
 
 
